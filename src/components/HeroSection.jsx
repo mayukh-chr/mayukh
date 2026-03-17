@@ -48,7 +48,7 @@ export default function HeroSection() {
 
       {/* Wordmark */}
       <div className="relative z-10 w-full px-4 pb-5 md:px-5 pointer-events-none">
-        <img src="/src/images/logo.svg" alt="Mayukh Saha" className="w-full" />
+        <img src="/images/logo.svg" alt="Mayukh Saha" className="w-full" />
       </div>
     </header>
   )

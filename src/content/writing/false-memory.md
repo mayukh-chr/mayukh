@@ -3,8 +3,8 @@ title: False Memory
 genre: Music
 date: Mar 07
 year: "2024"
-thumbnail: /src/images/project1.jpg
-image: /src/images/project1.jpg
+thumbnail: /images/project1.jpg
+image: /images/project1.jpg
 ---
 
 There's a specific kind of longing that comes from music you've never heard before — music that sounds like a memory of a place you've never been.
