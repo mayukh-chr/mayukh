@@ -39,6 +39,7 @@ export default function PostLayout({
   suggestedHref,
   suggestedMeta,
   suggestedLabel,
+  galleryContent,
 }) {
   return (
     <div className="flex flex-col w-full pt-[48px]">
@@ -76,6 +77,13 @@ export default function PostLayout({
           <div className="w-full aspect-[16/7] bg-fg/5" />
         )}
       </div>
+
+      {/* Gallery */}
+      {galleryContent && (
+        <div className="w-full pb-12">
+          {galleryContent}
+        </div>
+      )}
 
       {/* Body */}
       <div className="px-2.5 pb-24 w-full max-w-[720px] mx-auto post-body">

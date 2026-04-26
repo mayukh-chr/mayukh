@@ -1,6 +1,7 @@
 import { useParams, Link } from 'react-router-dom';
 import { getArchivePosts } from '../lib/content';
 import PostLayout from '../components/PostLayout';
+import ImageGallery from '../components/ImageGallery';
 
 export default function ArchivePost() {
   const { slug } = useParams();
@@ -17,6 +18,9 @@ export default function ArchivePost() {
   }
 
   const suggested = all.filter(p => p.slug !== slug).slice(0, 4);
+  const galleryContent = project.gallery_s3_prefix
+    ? <ImageGallery prefix={project.gallery_s3_prefix} />
+    : undefined;
 
   return (
     <PostLayout
@@ -28,6 +32,7 @@ export default function ArchivePost() {
       suggestedHref="/archive"
       suggestedMeta={p => `${p.genre} · ${p.year}`}
       suggestedLabel="More Work"
+      galleryContent={galleryContent}
     />
   );
 }
