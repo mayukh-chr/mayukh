@@ -78,17 +78,17 @@ export default function PostLayout({
         )}
       </div>
 
+      {/* Body */}
+      <div className="px-2.5 pb-24 w-full max-w-[720px] mx-auto post-body">
+        <ReactMarkdown>{post.content}</ReactMarkdown>
+      </div>
+
       {/* Gallery */}
       {galleryContent && (
         <div className="w-full pb-12">
           {galleryContent}
         </div>
       )}
-
-      {/* Body */}
-      <div className="px-2.5 pb-24 w-full max-w-[720px] mx-auto post-body">
-        <ReactMarkdown>{post.content}</ReactMarkdown>
-      </div>
 
       {/* Suggested posts */}
       {suggested.length > 0 && (
